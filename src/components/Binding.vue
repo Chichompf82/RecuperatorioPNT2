@@ -11,9 +11,9 @@
     <br>
     {{texto | pasarAMinuscula}}
     <br>
-    {{texto}}
+    {{texto | AlternarMayMin}}
     <br>
-    {{texto}}
+    {{texto | AlternarMinMay}}
     <br>
     <br>
     <hr>

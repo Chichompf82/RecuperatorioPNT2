@@ -6,6 +6,12 @@ Vue.filter('pasarAMayuscula', function(value) {
 Vue.filter('pasarAMinuscula', function(value) {
     return value.toLowerCase()
 })
+Vue.filter('AlternarMayMin', function(value) {
+    return value.split("").map((letra, index) => index%2 ? letra.toUpperCase() : letra.toLowerCase())
+})
+Vue.filter('AlternarMinMay', function(value) {
+    return value.split("").map((letra, index) => index%2 ? letra.toLowerCase() : letra.toUpperCase())
+})
 
 
 
